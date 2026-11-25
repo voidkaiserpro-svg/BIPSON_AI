@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080e1c">
+  <meta name="description" content="BIPSON AI - Your intelligent AI assistant.">
+  <title>BIPSON AI 3.0</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-logo">B</div>
+        <div>
+          <h2>BIPSON AI</h2>
+          <span>VERSION 3.0</span>
+        </div>
+      </div>
+
+      <button class="new-chat" id="newChat">
+        <span>＋</span> New conversation
+      </button>
+
+      <div class="sidebar-label">YOUR ASSISTANT</div>
+
+      <div class="side-item active">✦ &nbsp; AI Assistant</div>
+      <div class="side-item">⌘ &nbsp; Math Solver</div>
+      <div class="side-item">◉ &nbsp; Current Affairs</div>
+
+      <div class="sidebar-bottom">
+        <div class="online-dot"></div>
+        <span> BIPSON SYSTEM READY</span>
+        <p>PURE PYTHON EDITION</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuButton">☰</button>
+        <div class="page-name">AI Assistant <span>3.0</span></div>
+
+        <div class="top-actions">
+          <button id="themeButton" title="Toggle theme">☼</button>
+          <div class="profile">B</div>
+        </div>
+      </header>
+
+      <section class="chat-area" id="chatArea">
+        <div class="welcome" id="welcome">
+          <div class="welcome-icon">✦</div>
+          <div class="eyebrow">YOUR INTELLIGENCE PARTNER</div>
+          <h1>Meet your new<br><span>AI assistant.</span></h1>
+          <p>Ask anything. Explore ideas. Solve problems.<br>
+             Welcome to the next generation of BIPSON AI.</p>
+
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="Explain artificial intelligence simply">✧ Explain AI</button>
+            <button class="suggestion" data-prompt="Solve 25 multiplied by 12">⌗ Solve mathematics</button>
+            <button class="suggestion" data-prompt="Tell me an interesting science fact">◈ Science fact</button>
+          </div>
+        </div>
+
+        <div id="messages" class="messages"></div>
+      </section>
+
+      <footer class="composer-area">
+        <div class="composer">
+          <textarea id="userInput" placeholder="Message BIPSON AI..." rows="1"></textarea>
+
+          <div class="composer-actions">
+            <div class="tools">
+              <button id="voiceButton" title="Voice input">🎙</button>
+              <button id="stopButton" title="Stop speaking">◼</button>
+            </div>
+
+            <button class="send-button" id="sendButton" title="Send message">
+              ↑
+            </button>
+          </div>
+        </div>
+
+        <p class="disclaimer">
+          BIPSON AI can make mistakes. Verify important information.
+        </p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
